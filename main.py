@@ -30,6 +30,11 @@ while True:
         item = input("Insira as tarefas: ")
         tarefa.append(item)
         
+        
+
+        
+        
+        
 
 
     elif lista == 2:
@@ -47,7 +52,8 @@ while True:
         print("voce escolheu Marcar como Concluído!")
         conferir = input("Qual tarefa voce concluio?")
         confere.append(f"(x){item}")
-        tarefa.remove(item)
+
+        
 
 
     
