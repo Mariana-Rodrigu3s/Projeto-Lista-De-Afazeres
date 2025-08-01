@@ -47,6 +47,7 @@ while True:
         print("voce escolheu Marcar como Concluído!")
         conferir = input("Qual tarefa voce concluio?")
         confere.append(f"(x){item}")
+        tarefa.remove(item)
 
 
     
