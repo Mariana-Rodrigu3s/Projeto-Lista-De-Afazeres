@@ -1,5 +1,6 @@
 
 tarefa=[]
+confere=[]
 
 while True:
     print("""   
@@ -36,11 +37,17 @@ while True:
         
         for item in tarefa:
             print(item)
+        
+        for item in confere:
+            print(item)
 
 
         
     elif lista ==3:
         print("voce escolheu Marcar como Concluído!")
+        conferir = input("Qual tarefa voce concluio?")
+        confere.append(f"(x){item}")
+
 
     
     elif lista == 4:
