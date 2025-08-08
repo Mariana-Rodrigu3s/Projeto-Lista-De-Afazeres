@@ -1,7 +1,7 @@
-from manipulação import Manipulação
+ 
 tarefa=[]
 confere=[]
-Manipulação = Manipulação
+
 while True:
     print("""   
                                                                         
@@ -56,9 +56,13 @@ while True:
     
     elif lista == 0:
         print("saindo...")
-        
+        with open("main.txt", "w") as arquivos:
+            for tarefa in tarefa:
+                arquivos.write(tarefa +"\n")
+        print("lista de tarefas salvas com sucesso")
+
     
-        break
+        break 
 
 
 

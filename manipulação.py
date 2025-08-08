@@ -4,3 +4,6 @@ class Manipulação:
             for tarefa in lista:
                 arquivos.write(tarefa + "\n")
         print("lista de tarefa salva com sucesso")
+
+
+        
