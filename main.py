@@ -1,7 +1,7 @@
-
+from manipulação import Manipulação
 tarefa=[]
 confere=[]
-
+Manipulação = Manipulação
 while True:
     print("""   
                                                                         
@@ -56,8 +56,11 @@ while True:
     
     elif lista == 0:
         print("saindo...")
+        
     
         break
+
+
 
 
     
