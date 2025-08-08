@@ -1,5 +1,5 @@
  
-tarefa=[]
+tarefas=[]
 confere=[]
 
 while True:
@@ -28,14 +28,14 @@ while True:
     if lista == 1:
         print("---Inserir Tarefa!---")
         item = input("Insira as tarefas: ")
-        tarefa.append(item)
+        tarefas.append(item)
         print(f"Tarefa '{item}' inserida com sucesso.")
         
     elif lista == 2:
         print("---Listar Tarefa!---")
         print("Listando...")
         
-        for item in tarefa:
+        for item in tarefas:
             print(item)
         
         for item in confere:
@@ -51,18 +51,23 @@ while True:
     elif lista == 4:
         print("---Excluir Tarefa!---")
         pergunta = input("Qual item você quer remover?")
-        tarefa.remove(pergunta)
+        tarefas.remove(pergunta)
         print(f"Tarefa {pergunta} removida.")
     
     elif lista == 0:
         print("saindo...")
         with open("main.txt", "w") as arquivos:
-            for tarefa in tarefa:
+            for tarefa in tarefas:
                 arquivos.write(tarefa +"\n")
         print("lista de tarefas salvas com sucesso")
 
+        list = []
+        with open("main.txt", "r") as arquivos:
+            for tarefa in arquivos:
+                list.append(tarefa.strip())
+
     
-        break 
+            break 
 
 
 
