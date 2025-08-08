@@ -1,3 +1,6 @@
+# exemplo pq não usei classe
+
+
 #class Manipulação:
     #def salvar(self, lista):
        # with open("manipulação.txt", "w") as arquivos:
