@@ -1,7 +1,8 @@
  
+
 tarefas=[]
 confere=[]
-
+pergunta=["[x]"]
 while True:
     print("""   
                                                                         
@@ -24,7 +25,7 @@ while True:
 
 
 
-
+    #
     if lista == 1:
         print("---Inserir Tarefa!---")
         item = input("Insira as tarefas: ")
